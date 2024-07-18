@@ -2,70 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Weather App Landing Page</title>
+    <link rel="stylesheet" href="landing_style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="weather__header">
-            <form class="weather__search">
-                <input type="text" placeholder="Search for a city..." class="weather__searchform">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </form> 
-            <div class="weather__units">
-                <span class="weather_unit_celsius">&#176C</span>
-                <span class="weather_unit_farenheit">&#176F</span>
-            </div>
-        </div>
-        <div class="weather__body">
-            <h1 class="weather__city"></h1>
-            <div class="weather__datetime">
-            </div>
-            <div class="weather__forecast"></div>
-            <div class="weather__icon">
-            </div>
-            <p class="weather__temperature">
-            </p>
-            <div class="weather__minmax">
-                <p>Min: 12&#176</p>
-                <p>Max: 16&#176</p>
-            </div>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="index.html">App</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="weather__info">
-            <div class="weather__card">
-                <i class="fa-solid fa-temperature-full"></i>
-                <div>
-                    <p>Real Feel</p>
-                    <p class="weather__realfeel">18&#176</p>
-                </div>
-            </div>
-            <div class="weather__card">
-                <i class="fa-solid fa-droplet"></i>
-                <div>
-                    <p>Humidity</p>
-                    <p class="weather__humidity">18&#176</p>
-                </div>
-            </div>
-            <div class="weather__card">
-                <i class="fa-solid fa-wind"></i>
-                <div>
-                    <p>Wind</p>
-                    <p class="weather__wind">18&#176</p>
-                </div>
-            </div>
-            <div class="weather__card">
-                <i class="fa-solid fa-gauge-high"></i>
-                <div>
-                    <p>Pressure</p>
-                    <p class="weather__pressure">18&#176</p>
-                </div>
-            </div>
+    <section id="home" class="intro">
+        <img src="cover-image.jpg" alt="Weather App Cover Image" class="cover-image">
+        <h1>Weather Dashboard</h1>
+        <p>Your go-to app for accurate and up-to-date weather forecasts</p>
+        <button class="view-app-btn" onclick="location.href='index.html'">View App</button>
+    </section>
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+            <img src="update.PNG" alt="Real-Time Weather Updates">
+            <h3>Real-Time Weather Updates</h3>
+            <p>Provides up-to-the-minute weather information for your chosen location, ensuring you have the most accurate and current weather data at your fingertips.</p>
         </div>
-    </div>
-    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+        <div class="feature">
+            <img src="search-bar.PNG" alt="Interactive Search Functionality">
+            <h3>Interactive Search Functionality</h3>
+            <p>Allows users to search for weather information by city name, providing a quick and easy way to find the weather forecast for any location worldwide.</p>
+        </div>
+        <div class="feature">
+            <img src="other.PNG" alt="Detailed Weather Insights">
+            <h3>Detailed Weather Insights</h3>
+            <p>Offers comprehensive weather details including real feel temperature, humidity levels, wind speed, and atmospheric pressure, giving users a complete understanding of current weather conditions.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About the Project</h2>
+        <p>
+            The inspiration behind this weather dashboard project comes from a personal need to have a reliable source of weather information that is both accurate and easy to use. This project is part of the Portfolio Project for Holberton School.
+        </p>
+        <p>Team Members: <br> Chaimaa Miftah</p>
+        <p>
+            <a href="https://github.com/yourrepo" target="_blank">GitHub Repository</a>
+        </p>
+    </section>
 </body>
 </html>
+
