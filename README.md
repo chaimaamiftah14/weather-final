@@ -3,7 +3,7 @@
 ## Introduction
 The Weather Dashboard is a user-friendly web application that provides real-time weather information for any location worldwide. It displays current weather conditions, a five-day forecast, and additional weather-related data.
 
-Check out the live site: [Weather-final](https://your-deployed-site-link.com)
+Check out the live site: [Weather-final](https://chaimaamiftah14.github.io/weather-final/)
 
 Read about the project's journey: [Final Project Blog Article](https://github.com/chaimaamiftah14/weather-final.com)
 
