@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Edge compatibility mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for responsiveness -->
+    <title>Weather App</title> <!-- Title of the document -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS stylesheet -->
 </head>
 <body>
-    <div class="container">
-        <div class="weather__header">
-            <form class="weather__search">
-                <input type="text" placeholder="Search for a city..." class="weather__searchform">
-                <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="container"> <!-- Main container for the weather app -->
+        <div class="weather__header"> <!-- Header section of the weather app -->
+            <form class="weather__search"> <!-- Form for searching the city -->
+                <input type="text" placeholder="Search for a city..." class="weather__searchform"> <!-- Input field for city search -->
+                <i class="fa-solid fa-magnifying-glass"></i> <!-- Magnifying glass icon -->
             </form> 
-            <div class="weather__units">
-                <span class="weather_unit_celsius">&#176C</span>
-                <span class="weather_unit_farenheit">&#176F</span>
+            <div class="weather__units"> <!-- Container for unit selection -->
+                <span class="weather_unit_celsius">&#176C</span> <!-- Celsius unit option -->
+                <span class="weather_unit_farenheit">&#176F</span> <!-- Fahrenheit unit option -->
             </div>
         </div>
-        <div class="weather__body">
-            <h1 class="weather__city"></h1>
-            <div class="weather__datetime">
+        <div class="weather__body"> <!-- Body section of the weather app -->
+            <h1 class="weather__city"></h1> <!-- Placeholder for city name -->
+            <div class="weather__datetime"> <!-- Placeholder for date and time -->
             </div>
-            <div class="weather__forecast"></div>
-            <div class="weather__icon">
+            <div class="weather__forecast"></div> <!-- Placeholder for weather forecast -->
+            <div class="weather__icon"> <!-- Placeholder for weather icon -->
             </div>
-            <p class="weather__temperature">
+            <p class="weather__temperature"> <!-- Placeholder for temperature -->
             </p>
-            <div class="weather__minmax">
-                <p>Min: 12&#176</p>
-                <p>Max: 16&#176</p>
+            <div class="weather__minmax"> <!-- Container for min and max temperature -->
+                <p>Min: 12&#176</p> <!-- Placeholder for min temperature -->
+                <p>Max: 16&#176</p> <!-- Placeholder for max temperature -->
             </div>
         </div>
 
-        <div class="weather__info">
-            <div class="weather__card">
-                <i class="fa-solid fa-temperature-full"></i>
+        <div class="weather__info"> <!-- Container for additional weather information -->
+            <div class="weather__card"> <!-- Card for real feel temperature -->
+                <i class="fa-solid fa-temperature-full"></i> <!-- Icon for temperature -->
                 <div>
-                    <p>Real Feel</p>
-                    <p class="weather__realfeel">18&#176</p>
+                    <p>Real Feel</p> <!-- Label for real feel temperature -->
+                    <p class="weather__realfeel">18&#176</p> <!-- Placeholder for real feel temperature value -->
                 </div>
             </div>
-            <div class="weather__card">
-                <i class="fa-solid fa-droplet"></i>
+            <div class="weather__card"> <!-- Card for humidity -->
+                <i class="fa-solid fa-droplet"></i> <!-- Icon for humidity -->
                 <div>
-                    <p>Humidity</p>
-                    <p class="weather__humidity">18&#176</p>
+                    <p>Humidity</p> <!-- Label for humidity -->
+                    <p class="weather__humidity">18&#176</p> <!-- Placeholder for humidity value -->
                 </div>
             </div>
-            <div class="weather__card">
-                <i class="fa-solid fa-wind"></i>
+            <div class="weather__card"> <!-- Card for wind -->
+                <i class="fa-solid fa-wind"></i> <!-- Icon for wind -->
                 <div>
-                    <p>Wind</p>
-                    <p class="weather__wind">18&#176</p>
+                    <p>Wind</p> <!-- Label for wind -->
+                    <p class="weather__wind">18&#176</p> <!-- Placeholder for wind value -->
                 </div>
             </div>
-            <div class="weather__card">
-                <i class="fa-solid fa-gauge-high"></i>
+            <div class="weather__card"> <!-- Card for pressure -->
+                <i class="fa-solid fa-gauge-high"></i> <!-- Icon for pressure -->
                 <div>
-                    <p>Pressure</p>
-                    <p class="weather__pressure">18&#176</p>
+                    <p>Pressure</p> <!-- Label for pressure -->
+                    <p class="weather__pressure">18&#176</p> <!-- Placeholder for pressure value -->
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script> <!-- Link to FontAwesome for icons -->
+    <script src="app.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>

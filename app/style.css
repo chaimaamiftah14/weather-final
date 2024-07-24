@@ -1,7 +1,8 @@
-/* Import Google Font */
+/* Importing the Poppins font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* Global styles */
+/* Resetting margin and padding for all elements, 
+   setting box-sizing to border-box, and applying Poppins font */
 * {
     margin: 0;
     padding: 0;
@@ -9,62 +10,155 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Main container styles */
+/* Container styling for the main weather app box */
 .container {
-    background: #171717;
-    color: #fff;
-    padding: 2rem;
-    width: 40%;
-    margin: 4rem auto;
-    border-radius: 10px;
+    background: #171717; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 2rem; /* Padding inside the container */
+    width: 40%; /* Width of the container */
+    margin: 4rem auto; /* Centering the container with margin */
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Header styles */
+/* Styling for the header section of the weather app */
 .weather__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center-align items vertically */
 }
 
-/* Search input styles */
+/* Styling for input fields */
 input {
-    border: none;
-    background: #1e1e1e;
-    outline: none;
-    color: #fff;
-    padding: 0.5rem 2.5rem;
-    border-radius: 5px;
+    border: none; /* No border */
+    background: #1e1e1e; /* Dark background color */
+    outline: none; /* No outline on focus */
+    color: #fff; /* White text color */
+    padding: 0.5rem 2.5rem; /* Padding inside the input */
+    border-radius: 5px; /* Rounded corners */
 }
 
-/* Weather body styles */
+/* Placeholder text styling */
+input::placeholder {
+    color: #fff; /* White color for placeholder text */
+}
+
+/* Styling for the search section */
+.weather__search {
+    position: relative; /* Relative positioning for absolute children */
+}
+
+/* Styling for the search icon inside the search input */
+.weather__search i {
+    position: absolute; /* Absolute positioning */
+    left: 10px; /* Position from the left */
+    top: 10px; /* Position from the top */
+    font-size: 15px; /* Icon size */
+    color: #fff; /* White color */
+}
+
+/* Styling for the units section */
+.weather__units {
+    font-size: 1.5rem; /* Larger font size */
+}
+
+/* Styling for individual unit spans */
+.weather__units span {
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styling for the first child of the units span */
+.weather__units span:first-child {
+    margin-right: 0.5rem; /* Right margin */
+}
+
+/* Styling for the body section of the weather app */
 .weather__body {
-    text-align: center;
-    margin-top: 3rem;
+    text-align: center; /* Center-align text */
+    margin-top: 3rem; /* Top margin */
 }
 
-/* Weather info card styles */
+/* Styling for the date and time section */
+.weather__datetime {
+    margin-bottom: 2rem; /* Bottom margin */
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Styling for the forecast section */
+.weather__forecast {
+    background: #1e1e1e; /* Dark background color */
+    display: inline-block; /* Inline-block display */
+    padding: 0.5rem 1rem; /* Padding inside the forecast */
+    border-radius: 30px; /* Rounded corners */
+}
+
+/* Styling for the weather icon */
+.weather__icon img {
+    width: 100px; /* Width of the icon */
+}
+
+/* Styling for the temperature section */
+.weather__temperature {
+    font-size: 1.75rem; /* Larger font size */
+}
+
+/* Styling for the min and max temperature section */
+.weather__minmax {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center-align items */
+}
+
+/* Styling for the min and max temperature paragraphs */
+.weather__minmax p {
+    font-size: 14px; /* Smaller font size */
+    margin: 0.5rem; /* Margin around the paragraphs */
+}
+
+/* Styling for the weather info section */
 .weather__info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    margin-top: 3rem;
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-gap: 1rem; /* Gap between grid items */
+    margin-top: 3rem; /* Top margin */
 }
 
-/* Responsive styles */
-@media(max-width: 936px){
+/* Styling for individual weather cards */
+.weather__card {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center-align items */
+    background: #1e1e1e; /* Dark background color */
+    padding: 1rem; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for icons inside the weather card */
+.weather__card i {
+    font-size: 1.5rem; /* Icon size */
+    margin-right: 1rem; /* Right margin */
+}
+
+/* Styling for paragraphs inside the weather card */
+.weather__card p {
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Media query for screens with max-width of 936px */
+@media(max-width: 936px) {
     .container {
-        width: 90%;
+        width: 90%; /* Make container width 90% */
     }
+
     .weather__header {
-        flex-direction: column;
+        flex-direction: column; /* Stack header items vertically */
     }
+
     .weather__units {
-        margin-top: 1rem;
+        margin-top: 1rem; /* Top margin */
     }
 }
 
-@media(max-width: 400px){
+/* Media query for screens with max-width of 400px */
+@media(max-width: 400px) {
     .weather__info {
-        grid-template-columns: none;
+        grid-template-columns: none; /* Single column layout */
     }
 }
